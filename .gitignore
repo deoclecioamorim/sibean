@@ -1,4 +1,14 @@
+# Arquivos temporários do R
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+# Dados brutos
+*.xlsx
+*.csv
+
+# Arquivos grandes e locais
+*.tif
+*.zip
+*.sav
