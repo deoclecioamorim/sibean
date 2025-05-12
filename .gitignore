@@ -5,7 +5,7 @@
 .Ruserdata
 
 # Dados brutos
-#data/*.xlsx
+data/*.xlsx
 data/*.csv
 
 # Arquivos grandes e locais
