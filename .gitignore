@@ -5,10 +5,10 @@
 .Ruserdata
 
 # Dados brutos
-*.xlsx
-*.csv
+data/*.xlsx
+data/*.csv
 
 # Arquivos grandes e locais
-*.tif
+figures/*.tif
 *.zip
 *.sav
