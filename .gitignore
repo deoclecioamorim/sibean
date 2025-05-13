@@ -1,0 +1,13 @@
+# Arquivos temporários do R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Dados brutos
+data/*
+!data/.gitkeep
+# Arquivos grandes e locais
+figures/*.tif
+*.zip
+*.sav
