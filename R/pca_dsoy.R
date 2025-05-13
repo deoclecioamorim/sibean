@@ -126,15 +126,15 @@ plot_pc2
 
 
 
-jpeg(filename="figures/pca.jpeg", # Nome do arquivo e extensão
-    width = 15,    # largura
-    height = 10,   # Altura
-    res= 500,# Resolução em dpi
-    family = "Palatino", #fonte
-    units = "in")  # Unidades.
-gridExtra::grid.arrange(plot_pc1, plot_pc2)
-dev.off() # Fecha a janela gráfica
-
+# jpeg(filename="figures/pca.jpeg", # Nome do arquivo e extensão
+#     width = 15,    # largura
+#     height = 10,   # Altura
+#     res= 500,# Resolução em dpi
+#     family = "Palatino", #fonte
+#     units = "in")  # Unidades.
+# gridExtra::grid.arrange(plot_pc1, plot_pc2)
+# dev.off() # Fecha a janela gráfica
+# 
 
 # Gráfico biplot PCA ------------------------------------------------------
 library(factoextra)
@@ -214,13 +214,6 @@ biplot_custom <- function(res.pca, dims, title_letter) {
 pA <- biplot_custom(res.pca, c(1, 2), "A")
 pA
 
-# Montar figura com gridExtra
-grid_plot <- grid.arrange(pA, pB, pC, pD, ncol = 2)
-
-# Converter para objeto ggplot (necessário para ggsave)
-ggplot_grid <- as.ggplot(grid_plot)
-
-class(grid_plot)
 
 tiff(filename="figuras/fig3.tiff", # Nome do arquivo e extensão
      width = 15,    # largura

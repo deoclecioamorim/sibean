@@ -5,9 +5,8 @@
 .Ruserdata
 
 # Dados brutos
-data/*.xlsx
-data/*.csv
-
+data/*
+!data/.gitkeep
 # Arquivos grandes e locais
 figures/*.tif
 *.zip
